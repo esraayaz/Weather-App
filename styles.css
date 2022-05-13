@@ -1,0 +1,89 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+li {
+    list-style: none;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+ul {
+    font-weight: 500;
+}
+
+#middle {
+    font-size: 35px;
+    font-weight: 600px;
+}
+
+#date {
+    font-size: 20px;
+}
+
+#sun-icon {
+    margin-bottom: 15px;
+}
+
+#fahrenheit-link,
+#celsius-link {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#c-between-f {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#city {
+    margin-top: 50px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.temperature {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#sunrise {
+    font-weight: 300;
+}
+
+#sunset {
+    font-weight: 300;
+}
+
+#humidity {
+    font-weight: 300;
+}
+
+#wind {
+    font-weight: 300;
+}
+
+#description {
+    font-weight: 300;
+}
+
+.pictures {
+    vertical-align: middle;
+}
+
+.weather-app {
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 6px;
+    max-width: 900px;
+    max-height: 600px;
+    margin: 20px auto;
+}
+
+.weather-svg {
+    width: 130%;
+    height: auto;
+    margin-top: 50px;
+    margin-right: 50px;
+}
