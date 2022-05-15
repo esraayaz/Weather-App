@@ -1,11 +1,19 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 html {
     height: -webkit-fill-available;
+}
+
+.container {
+    max-width: 920px;
+    min-height: 300px;
 }
 
 body {
@@ -172,4 +180,5 @@ ul {
     text-align: left;
     display: flex;
     font-size: 12px;
+    padding-left: 0px;
 }
