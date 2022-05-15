@@ -1,5 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: linear-gradient( 90deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 100%);
+    color: black;
+    max-width: 100%;
+    height: -webkit-fill-available;
 }
 
 li {
@@ -7,6 +25,7 @@ li {
     line-height: 40px;
     margin: 0 auto;
     margin-top: 30px;
+    padding-top: 20px;
 }
 
 ul {
@@ -16,10 +35,12 @@ ul {
 #middle {
     font-size: 35px;
     font-weight: 600px;
+    line-height: 50px;
 }
 
 #date {
     font-size: 20px;
+    padding-bottom: 20px;
 }
 
 #sun-icon {
@@ -34,6 +55,20 @@ ul {
 
 #icon {
     width: 80px;
+    z-index: 1;
+    animation: jump 1.7s linear infinite alternate;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 #city {
@@ -46,14 +81,6 @@ ul {
 
 .temperature {
     font-size: 30px;
-    font-weight: 300;
-}
-
-#sunrise {
-    font-weight: 300;
-}
-
-#sunset {
     font-weight: 300;
 }
 
@@ -73,8 +100,20 @@ ul {
     font-weight: 390;
 }
 
+#descript {
+    text-align: left;
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
 #description {
     font-weight: 300;
+}
+
+#forecast {
+    padding-top: 40px;
+    text-align: center;
 }
 
 .pictures {
@@ -82,8 +121,8 @@ ul {
 }
 
 .weather-app {
-    border: 1px solid black;
-    background-color: rgba(0, 0, 0, 0.01);
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.352);
     padding: 25px;
     border-radius: 6px;
     max-width: 900px;
@@ -110,7 +149,7 @@ ul {
 }
 
 .col-3 .actives {
-    color: dodgerblue;
+    color: black;
     cursor: default;
     vertical-align: middle;
     text-decoration: none;
@@ -118,4 +157,19 @@ ul {
 
 .col-3 .actives:hover {
     text-decoration: underline;
+}
+
+.forecast-date {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.forecast-temperature-min {
+    opacity: 0.4;
+}
+
+#esraayaz {
+    text-align: left;
+    display: flex;
+    font-size: 12px;
 }

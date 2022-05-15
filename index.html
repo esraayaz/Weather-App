@@ -27,15 +27,13 @@
                             <input type="submit" value="Search" class="form-control btn btn-dark shadow-sm" />
                         </div>
                         <div class="col-3">
-                            <button type="button" class="form-control btn btn-secondary shadow-sm" id="current-location-button">
+                            <button type="button" class="form-control btn btn-light shadow-sm" id="current-location-button">
                   Current
                 </button>
                         </div>
                     </div>
                 </form>
                 <ul class="col-sm-4">
-                    <li>Sunrise : <span id="sunrise"></span></li>
-                    <li>Sunset : <span id="sunset"></span></li>
                     <li>Humidity : <span id="humidity"></span><span id="humidity-and"> %</span></li>
                     <li>Wind : <span id="wind"></span><span id="wind-km"> km/h</span></li>
                     <li>Description : <span id="description"></span></li>
@@ -47,34 +45,29 @@
                     <span class="temperature" id="temperature"></span>
                     <span class="units"><a href="#" id="celsius-link" class="active">°C | </a>
                     <a href="#" id="fahrenheit-link" class="actives">°F</a></span>
+
                 </div>
                 <h2 class="col-4">
                     <img src="svg/weather.svg" alt="weather icon" class="weather-svg" />
                 </h2>
-                <div class="container">
-                    <div class="row align-items-start">
-                        <div class="col">
-                            One of three columns
-                        </div>
-                        <div class="col">
-                            One of three columns
-                        </div>
-                        <div class="col">
-                            One of three columns
-                        </div>
-                        <div class="col">
-                            One of three columns
-                        </div>
-                        <div class="col">
-                            One of three columns
+                <div class="weather-forecast" id="forecast">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="forecast-date">Thu</div>
+                            <img src="https://openweathermap.org/img/wn/50n@2x.png" alt="" width="70" />
+                            <div class="forecast-temperature">
+                                <span class="forecast-temperature-max">18°</span>
+                                <span class="forecast-temperature-min">12°</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-        <small><a href="https://github.com/esraayaz/Weather-App" target="_blank">Open-source code</a> by Esra Ayaz</small>
+        <small id="esraayaz"><a href="https://github.com/esraayaz/Weather-App" target="_blank" >Open-source code</a> by Esra Ayaz</small>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js" integrity="sha512-x/vqovXY/Q4b+rNjgiheBsA/vbWA3IVvsS8lkQSX1gQ4ggSJx38oI2vREZXpTzhAv6tNUaX81E7QBBzkpDQayA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="main.js"></script>
 
 </html>
